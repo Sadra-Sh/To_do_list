@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- this line declares the document type and version of html being used-->
+<html lang="en"> <!-- indicates primary language that will be used on the document/webpage is english-->
+<head> <!-- the head section contain metadata about the page and provides details and insturctions for the browser and 
+    search engines. it doesnt desplay anoyting on the page-->
+
+    <meta charset="UTF-8"> <!-- specifies the character encoding used on the document to be UTF-8-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- defines view port settings for responsive page design, 
+        ensures the width of the page is the width of the device used, and initial zoom level is set to 1-->
+
+    <title>To Do List</title> <!-- page title, displayed at browser title bar or on tab-->
+
+    <link rel = "stylesheet" href="main.css" />  <!-- links to file called main.css -->
+</head>
+<body>
+
+    <header>
+        <h1>Create a Task</h1>
+        <form id="new-task-form">
+            <input 
+                type="text" 
+                id="new-task-input"
+                placeholder="What do you have planned?"
+            />
+            <input 
+                type="submit" 
+                id="new-task-submit"
+                value="Add task"
+            />
+        </form>
+    </header>  
+    <main>
+        <section class="task-list">
+            <h2>Tasks To Get Done</h2>
+            <div id="tasks">
+                
+                <!-- <div class="task">
+                    <div class="content">
+                        <input 
+                            type="text"
+                            class = "text"
+                            value = "my shiny task"
+                            readonly
+                        />
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                    </div>
+                <div> -->
+
+            </div>
+        </section>
+    </main> 
+
+    <script src="main.js"></script>  <!-- link the main.js file to the html -->
+</body>
+</html>
